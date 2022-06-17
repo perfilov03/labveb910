@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1>Перфилов Алексей Сергеевич - Лабораторная работа №8</h1>
+                <div class="header__menu menu">
+                    <button class="menu__burger">
+                        <svg id="menu-btn" width="80" height="60">     
+                            <path stroke="black" stroke-width="4" stroke-linecap="round" d="M10 10 L 70 10" />
+                            <path stroke="black" stroke-width="4" stroke-linecap="round" d="M10 30 L 70 30" />
+                            <path stroke="black" stroke-width="4" stroke-linecap="round" d="M10 30 L 70 30" />
+                            <path stroke="black" stroke-width="4" stroke-linecap="round" d="M10 50 L 70 50" />
+                            <rect id="menu" fill="black" opacity="0%" x=0 y=0 width="80" height="60"/>
+                        </svg>
+                    </button>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__link">
+                                <a href="#">
+                                    Раздел №1
+                                </a>
+                            </li>
+                            <li class="menu__link">
+                                <a href="#">
+                                    Раздел №2
+                                </a>
+                            </li>
+                            <li class="menu__link">
+                                <a href="#">
+                                    Раздел №3
+                                </a>
+                            </li>
+                            <li class="menu__link">
+                                <a href="#">
+                                    Раздел №4
+                                </a>
+                            </li>
+                            <li class="menu__link">
+                                <a href="#">
+                                    Раздел №5
+                                </a>
+                            </li>
+                            <li class="menu__link">
+                                <a href="#">
+                                    Раздел №6
+                                </a>
+                            </li>
+                            <li class="menu__link">
+                                <a href="#">
+                                    Раздел №7
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+    </div>
+    <main class="page">
+        <button class="accordion">Волнистый попугай</button>
+        <div class="panel">
+            <p class="text">Домашний волнистый попугай самый часто встречающийся пернатый в неволе. Это неудивительно, так как для волнистиков нужны самые простые условия 
+                содержания. Кормить, поддерживать гигиену, учить их разговору очень легко. Добавьте яркие, всевозможные сочетания в окрасе этих 
+                смышленых птиц и вы поймете причину популярности этого вида.</p>
+        </div>
+        <button class="accordion">Неразлучники</button>
+        <div class="panel">
+            <p class="text">Красивые, яркие, миниатюрные попугаи, длина тела которых составляет около 17 см, а вес примерно 50 грамм. У них довольно крупная голова, 
+                за счет которой птицы выглядят несколько коренастыми, крепкий, загнутый клюв, небольшой закругленный хвост, сильные, короткие ноги</p>
+        </div>
+        <button class="accordion">Ара</button>
+        <div class="panel">
+            <p class="text">Сине-желтый ара прекрасно подражает человеческой речи. Птицы с легкостью произносят несколько десятков слов. Эти красивейшие пернатые еще те 
+                интеллектуалы. Они выполняют различные трюки, исполняют команды. Особенности содержания: требуют внимания, обожают общение с компаньоном.</p>
+        </div>
+    </main>
+
+    <div class="toast" id="toasts" style="display:none; margin: 0 -500px 0px 0">
+        <div class="toast__title"></div>
+        <div class="toast__text"></div>
+        <button class="toast__button" id="closeToast">
+            <img src="image/cancel_music_close_cross_icon_123879.svg" alt="крестик" width="34px" height="34px">
+        </button>
+    </div>
+    <script src="js/add.js"></script>
+</body>
+</html>
